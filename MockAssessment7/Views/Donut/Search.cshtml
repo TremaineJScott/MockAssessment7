@@ -1,0 +1,16 @@
+﻿@model MockAssessment7.Models.Donut
+
+<div class="row">
+    <div class="col-md-8">
+        <form method="post" asp-controller="Donut" asp-action="Search">
+            <h1>TLDR</h1>
+            <div class="d-flex">
+                <div>
+                    <label asp-for="id" for="id">@Html.DisplayNameFor(model => model.id) </label>
+                    <input asp-for="id" type="number" name="id" value="" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
